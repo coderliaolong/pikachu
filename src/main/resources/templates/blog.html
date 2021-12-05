@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragment :: head(~{::title})">
+  <title>博客</title>
+</head>
+<body>
+  <!-- 导航 -->
+  <nav class="ui inverted attached segment m-padded-tb-mini">
+    <div class="ui container">
+      <div class="ui inverted secondary stackable menu">
+        <h2 class="ui teal header item">Blog</h2>
+        <a href="#" class="item m-mobile-hide m-nav-item"><i class="home icon"></i>首页</a>
+        <a href="#" class="item m-mobile-hide m-nav-item"><i class="idea icon"></i>分类</a>
+        <a href="#" class="item m-mobile-hide m-nav-item"><i class="tags icon"></i>标签</a>
+        <a href="#" class="item m-mobile-hide m-nav-item"><i class="clone icon"></i>归档</a>
+        <a href="#" class="item m-mobile-hide m-nav-item"><i class="info icon"></i>关于我</a>
+        <div class="right item m-mobile-hide m-nav-item">
+          <div class="ui icon transparent inverted input">
+            <input type="text" placeholder="Search...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="menu" href="#" class="ui menu black icon button m-right-top m-mobile-show">
+      <i class="sidebar icon"></i>
+    </a>
+  </nav>
+
+  <!-- 中间内容 -->
+  <div class="m-padded-tb-big m-container-small">
+    <div class="ui container">
+      <div class="ui top attached segment">
+        <div class="ui horizontal mini link list">
+          <div class="item">
+            <img src="https://picsum.photos/seed/picsum/800/400" alt="" class="ui avatar image">
+            <div class="content"><a href="#" class="header">作者名字</a></div>
+          </div>
+          <div class="item">
+            <i class="calendar icon"></i>2021-11-28
+          </div>
+          <div class="item">
+            <i class="eye icon"></i>101
+          </div>
+        </div>
+
+        <!-- 图片 -->
+        <div class="ui attached segment">
+          <img src="https://picsum.photos/seed/picsum/800/400" alt="" class="ui fluid image rounded">
+        </div>
+
+        <!-- 博客内容 -->
+        <div class="ui attached segment">
+          <div class="ui right aligned segment">
+            <div class="ui orange label basic">原创</div>
+          </div>
+          <h2 class="ui center aligned header">博客标题</h2>
+          <div id="content" class="m-padded-lr">
+            aaaa
+          </div>
+
+          <!-- 标签 -->
+          <div m-padded-lr>
+            <div class="ui basic teal left pointing label">标签名</div>
+          </div>
+
+          <div class="ui center aligned segment">
+            <button id="payButton" class="ui orange basic circular button">赞赏</button>
+          </div>
+          <div class="ui payQR flowing popup transition hidden">
+            <div class="ui orange basic label">
+              <div class="ui images" style="font-size: inherit;">
+                <div class="iamge">
+                  <img th:src="@{/images/wechat.jpg}" alt="" class="ui image rounded bordered" style="width: 120px;">
+                  <div>微信</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 博客信息 -->
+        <div class="ui attached positive message">
+          <div class="ui grid">
+            <div class="eleven wide column">
+              <ui class="list">
+                <li>作者</li>
+                <li>发表时间</li>
+                <li>版权声明</li>
+                <li>公众号转载: 请在文末添加作者公众号二维码</li>
+              </ui>
+            </div>
+            <div class="five wide column">
+              <img th:src="@{/images/wechat.jpg}" alt="" style="width: 110px;"
+                   class="ui right floated rounded image bordered">
+            </div>
+          </div>
+        </div>
+
+        <!-- 留言区 -->
+        <div class="ui bottom attached segment">
+          <!-- 留言列表 -->
+          <div class="ui teal segment">
+            <div class="ui comments">
+              <div class="comment">
+                <a class="avatar">
+                  <img src="https://unsplash.it/100/100?image=1005">
+                </a>
+                <div class="content">
+                  <a class="author">Matt</a>
+                  <div class="metadata">
+                    <span class="date">Today at 5:42PM</span>
+                  </div>
+                  <div class="text">
+                    How artistic!
+                  </div>
+                  <div class="actions">
+                    <a class="reply">Reply</a>
+                  </div>
+                </div>
+              </div>
+              <div class="comment">
+                <a class="avatar">
+                  <img src="https://unsplash.it/100/100?image=1005">
+                </a>
+                <div class="content">
+                  <a class="author">Matt</a>
+                  <div class="metadata">
+                    <span class="date">Today at 5:42PM</span>
+                  </div>
+                  <div class="text">
+                    How artistic!
+                  </div>
+                  <div class="actions">
+                    <a class="reply">Reply</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui form">
+            <div class="field">
+              <textarea name="content" id="" cols="30" rows="10" placeholder="请输入评论..."></textarea>
+            </div>
+            <div class="fields">
+              <div class="field m-mobile-wide">
+                <div class="ui left icon input">
+                  <i class="user icon"></i>
+                  <input type="text" name="nickname" placeholder="姓名">
+                </div>
+              </div>
+              <div class="field m-mobile-wide m-margin-top-small">
+                <div class="ui left icon input">
+                  <i class="mail icon"></i>
+                  <input type="text" name="email" placeholder="邮箱">
+                </div>
+              </div>
+              <div class="field m-mobile-wide m-margin-top-small">
+                <button class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部footer -->
+  <footer th:replace="_fragment :: footer"></footer>
+  <!--/*/<th:block th:replace="_fragment :: script">/*/-->
+
+  <!--/*/</th:block>/*/-->
+  <script>
+      // 赞赏
+      $('#payButton').popup({
+          popup: $('.payQR'),
+          on: 'click',
+          position: 'bottom center'
+      })
+  </script>
+</body>
+</html>

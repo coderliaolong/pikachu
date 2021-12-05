@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragment :: head(~{::title})">
+  <title>首页</title>
+</head>
+<body>
+  <!-- 导航 -->
+  <nav th:replace="_fragment :: nav(1)">
+  </nav>
+
+  <!-- 中间内容 -->
+  <div class="m-padded-tb-big m-container">
+    <div class="ui container">
+      <div class="ui grid stackable">
+        <!-- 左侧博客文章列表块 -->
+        <div class="eleven wide column">
+          <!-- header -->
+          <div class="ui top attached segment">
+            <div class="ui middle aligned two column grid">
+              <div class="column">
+                <h3 class="ui teal header">博客</h3>
+              </div>
+              <div class="right aligned column">
+                共<h3 class="ui orange header m-inline-block">3</h3>篇
+              </div>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="ui attached segment">
+            <div class="ui segment vertical padded m-padded-tb-large">
+              <div class="ui grid mobile reversed stackable">
+                <div class="eleven wide column">
+                  <h3 class="ui header">博客标题</h3>
+                  <p class="m-text">段落内容</p>
+                  <div class="ui grid">
+                    <div class="eleven wide column">
+                      <div class="ui horizontal mini link list">
+                        <div class="item">
+                          <img src="https://picsum.photos/seed/picsum/800/400" alt="" class="ui avatar image">
+                          <div class="content"><a href="#" class="header">作者名字</a></div>
+                        </div>
+                        <div class="item">
+                          <i class="calendar icon"></i>2021-11-28
+                        </div>
+                        <div class="item">
+                          <i class="eye icon"></i>101
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right aligned five wide column">
+                      <a href="#" class="ui teal basic label m-padded-tiny">分类</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="five wide column">
+                  <a href="#" class="ui rounded image">
+                    <img src="https://picsum.photos/seed/picsum/800/400" alt="" class="ui rounded image">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="ui segment vertical padded m-padded-tb-large">
+              <div class="ui grid mobile reversed stackable">
+                <div class="eleven wide column">
+                  <h3 class="ui header">博客标题</h3>
+                  <p class="m-text">段落内容</p>
+                  <div class="ui grid">
+                    <div class="eleven wide column">
+                      <div class="ui horizontal mini link list">
+                        <div class="item">
+                          <img src="https://picsum.photos/seed/picsum/800/400" alt="" class="ui avatar image">
+                          <div class="content"><a href="#" class="header">作者名字</a></div>
+                        </div>
+                        <div class="item">
+                          <i class="calendar icon"></i>2021-11-28
+                        </div>
+                        <div class="item">
+                          <i class="eye icon"></i>101
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right aligned five wide column">
+                      <a href="#" class="ui teal basic label m-padded-tiny">分类</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="five wide column">
+                  <a href="#" class="ui rounded image">
+                    <img src="https://picsum.photos/seed/picsum/800/400" alt="" class="ui rounded image">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="ui segment vertical padded m-padded-tb-large">
+              <div class="ui grid mobile reversed stackable">
+                <div class="eleven wide column">
+                  <h3 class="ui header">博客标题</h3>
+                  <p class="m-text">段落内容</p>
+                  <div class="ui grid">
+                    <div class="eleven wide column">
+                      <div class="ui horizontal mini link list">
+                        <div class="item">
+                          <img src="https://picsum.photos/seed/picsum/800/400" alt="" class="ui avatar image">
+                          <div class="content"><a href="#" class="header">作者名字</a></div>
+                        </div>
+                        <div class="item">
+                          <i class="calendar icon"></i>2021-11-28
+                        </div>
+                        <div class="item">
+                          <i class="eye icon"></i>101
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right aligned five wide column">
+                      <a href="#" class="ui teal basic label m-padded-tiny">分类</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="five wide column">
+                  <a href="#" class="ui rounded image">
+                    <img src="https://picsum.photos/seed/picsum/800/400" alt="" class="ui rounded image">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer -->
+          <div class="ui attached segment">
+            <div class="ui middle aligned two column grid">
+              <div class="column">
+                <a href="#" class="ui teal mini basic button">上一页</a>
+              </div>
+              <div class="right aligned column">
+                <a href="#" class="ui teal mini basic button">下一页</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 右侧分类/标签等卡片 -->
+        <div class="five wide column">
+          <!-- 分类卡片 -->
+          <div class="ui segments">
+            <div class="ui secondary segment">
+              <div class="ui two column grid">
+                <div class="column">
+                  <i class="idea icon"></i>分类
+                </div>
+                <div class="right aligned column">
+                  <a href="">more <i class="angle double right icon"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ui teal segment">
+              <div class="ui fluid vertical menu">
+                <a href="" class="item">
+                  分类一
+                  <div class="ui teal basic left pointing label">12</div>
+                </a>
+                <a href="" class="item">
+                  分类二
+                  <div class="ui teal basic left pointing label">12</div>
+                </a>
+                <a href="" class="item">
+                  分类三
+                  <div class="ui teal basic left pointing label">12</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- 标签 -->
+          <div class="ui segments m-margin-top-large">
+            <div class="ui secondary segment">
+              <div class="ui two column grid">
+                <div class="column">
+                  <i class="tags icon"></i>标签
+                </div>
+                <div class="right aligned column">
+                  <a href="">more <i class="angle double right icon"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ui teal segment">
+                <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
+                  标签名
+                  <div class="detail">23</div>
+                </a>
+
+                <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
+                  标签名
+                  <div class="detail">23</div>
+                </a>
+
+                <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
+                  标签名
+                  <div class="detail">23</div>
+                </a>
+            </div>
+          </div>
+
+          <!-- 最新推荐 -->
+          <div class="ui segemnts m-margin-top-large">
+            <div class="ui secondary attached segment">
+                <i class="bookmark icon"></i>最新推荐
+            </div>
+            <div class="ui attached segment">
+              <a href="#" class="m-black m-text-thin">博客B</a>
+            </div>
+            <div class="ui attached segment">
+              <a href="#" class="m-black m-text-thin">博客C</a>
+            </div>
+            <div class="ui attached segment">
+              <a href="#" class="m-black m-text-thin">博客一</a>
+            </div>
+          </div>
+
+          <!-- 二维码 -->
+          <h4 class="ui horizontal divider header">扫码关注我</h4>
+          <div class="ui card centered" style="width:11em">
+            <img th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部footer -->
+  <footer th:replace="_fragment :: footer"></footer>
+
+<!--/*/<th:block th:replace="_fragment :: script">/*/-->
+
+<!--/*/</th:block>/*/-->
+</body>
+</html>

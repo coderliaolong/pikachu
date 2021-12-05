@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragment :: head(~{::title})">
+  <title>关于我</title>
+</head>
+<body>
+  <!-- 导航 -->
+  <nav class="ui inverted attached segment m-padded-tb-mini">
+    <div class="ui container">
+      <div class="ui inverted secondary stackable menu">
+        <h2 class="ui teal header item">Blog</h2>
+        <a href="#" class="item m-mobile-hide m-nav-item"><i class="home icon"></i>首页</a>
+        <a href="#" class="item m-mobile-hide m-nav-item"><i class="idea icon"></i>分类</a>
+        <a href="#" class="item m-mobile-hide m-nav-item"><i class="tags icon"></i>标签</a>
+        <a href="#" class="item m-mobile-hide m-nav-item"><i class="clone icon"></i>归档</a>
+        <a href="#" class="active item m-mobile-hide m-nav-item"><i class="info icon"></i>关于我</a>
+        <div class="right item m-mobile-hide m-nav-item">
+          <div class="ui icon transparent inverted input">
+            <input type="text" placeholder="Search...">
+              <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="menu" href="#" class="ui menu black icon button m-right-top m-mobile-show">
+      <i class="sidebar icon"></i>
+    </a>
+  </nav>
+
+  <!-- 中间内容 -->
+  <div class="m-padded-tb-big m-container-small">
+    <div class="ui container m-padded-tb-big">
+      <div class="ui grid">
+        <div class="eleven wide column">
+          <img src="../static/images/wechat.jpg" alt="" class="rounded image ui">
+        </div>
+        <div class="five wide column">
+          <div class="ui top attached segment">
+            <div class="ui header">关于我</div>
+            <div class="ui attached segment">
+              <p class="m-text">我是谁谁谁</p>
+            </div>
+            <div class="ui attached segment">
+              <div class="ui orange basic left pointing label">编程</div>
+              <div class="ui orange basic left pointing label">编程</div>
+              <div class="ui orange basic left pointing label">编程</div>
+              <div class="ui orange basic left pointing label">编程</div>
+            </div>
+            <div class="ui attached segment">
+              <div class="ui teal basic left pointing label m-margin-tb-tiny">Java</div>
+              <div class="ui teal basic left pointing label m-margin-tb-tiny">redis</div>
+              <div class="ui teal basic left pointing label m-margin-tb-tiny">MySQL</div>
+              <div class="ui teal basic left pointing label m-margin-tb-tiny">JS</div>
+            </div>
+            <div class="ui bottom attached segment">
+              <a href="https://github.com/coderliaolong" target="_blank" class="ui circular icon button"><i class="github icon"></i></a>
+              <a href="#" class="ui wechat circular icon button"><i class="wechat icon"></i></a>
+              <a href="#" class="ui circular icon button"><i class="mail icon"></i></a>
+            </div>
+            <div class="ui wechat-qr flowing popup transition hidden">
+              <img src="../static/images/wechat.jpg" alt="" class="ui rounded image" style="width: 100px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部footer -->
+  <footer th:replace="_fragment :: footer"></footer>
+  <!--/*/<th:block th:replace="_fragment :: script">/*/-->
+
+  <!--/*/</th:block>/*/-->
+</body>
+</html>
