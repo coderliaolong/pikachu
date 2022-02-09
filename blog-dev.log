@@ -2965,3 +2965,44 @@ org.attoparser.ParseException: (Line = 17, Column = 101) Malformed markup: Attri
 2021-12-05 23:11:28.234  WARN 12092 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2021-12-05 23:11:28.542  INFO 12092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2021-12-05 23:11:28.558  INFO 12092 --- [main] com.liaolong.pikachu.BlogApplication     : Started BlogApplication in 9.983 seconds (JVM running for 15.187)
+2021-12-06 03:04:23.233  WARN 12092 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h28s344ms334µs).
+2021-12-06 03:04:30.697  WARN 17636 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h28s349ms869µs100ns).
+2021-12-06 20:17:25.926  WARN 12092 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17h13m7s248ms562µs900ns).
+2021-12-06 20:17:33.359  WARN 17636 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17h13m7s217ms328µs900ns).
+2021-12-06 20:42:28.714  INFO 12092 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-06 20:42:28.724  INFO 12092 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-06 20:42:28.734  INFO 12092 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-07 01:46:34.489  WARN 17636 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h27s583ms836µs400ns).
+2021-12-07 20:30:45.230  WARN 17636 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18h44m15s77ms677µs500ns).
+2021-12-08 02:46:14.424  WARN 17636 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h28s539ms375µs600ns).
+2021-12-08 20:23:39.721  WARN 17636 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17h37m29s917ms968µs700ns).
+2021-12-09 02:23:39.687  WARN 17636 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h27s322ms671µs600ns).
+2021-12-09 20:12:37.077  WARN 17636 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17h49m439ms1µs300ns).
+2021-12-11 08:41:07.286  WARN 17636 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d9h8m1s943ms734µs400ns).
+2022-02-09 23:04:35.898  INFO 8116 --- [main] com.liaolong.pikachu.BlogApplication     : Starting BlogApplication using Java 1.8.0_241 on LiaoLong with PID 8116 (D:\MyWorkspace\project\myblog\target\classes started by LiaoLong in D:\MyWorkspace\project\myblog)
+2022-02-09 23:04:35.904 DEBUG 8116 --- [main] com.liaolong.pikachu.BlogApplication     : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-09 23:04:35.904  INFO 8116 --- [main] com.liaolong.pikachu.BlogApplication     : The following profiles are active: dev
+2022-02-09 23:04:36.520  INFO 8116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-09 23:04:36.536  INFO 8116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-02-09 23:04:37.088  INFO 8116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-02-09 23:04:37.096  INFO 8116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-09 23:04:37.097  INFO 8116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-09 23:04:37.171  INFO 8116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-09 23:04:37.171  INFO 8116 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1231 ms
+2022-02-09 23:04:37.320  INFO 8116 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-09 23:04:37.366  INFO 8116 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-02-09 23:04:37.539  INFO 8116 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-09 23:04:37.623  INFO 8116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-09 23:04:37.624  WARN 8116 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-02-09 23:04:38.027  INFO 8116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-09 23:04:38.042  INFO 8116 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-09 23:04:38.733  INFO 8116 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-09 23:04:38.741  INFO 8116 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-09 23:04:38.824  WARN 8116 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-09 23:04:39.121  INFO 8116 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-09 23:04:39.212  WARN 8116 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-02-09 23:04:39.384  INFO 8116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-02-09 23:04:39.392  INFO 8116 --- [main] com.liaolong.pikachu.BlogApplication     : Started BlogApplication in 3.936 seconds (JVM running for 4.524)
+2022-02-09 23:06:15.705  INFO 8116 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-09 23:06:15.705  INFO 8116 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-09 23:06:15.706  INFO 8116 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
